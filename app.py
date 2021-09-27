@@ -7,7 +7,6 @@ from bson import json_util, ObjectId
 
 app = Flask(__name__)
 # connecting with DB
-uname,pwd,dbName = "keshav","forgotpassword","Library"
 uri = "mongodb+srv://"+uname+":"+pwd+"@keshav-lms.biuic.mongodb.net/"+dbName+"?retryWrites=true&w=majority"
 mongodb_client = PyMongo(app, uri)
 db = mongodb_client.db
